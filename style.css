@@ -172,6 +172,9 @@ html, body {
     .side-bar, .side-bar .contact h2 {
         font-size: 0.7rem;
     }
+    .side-bar img {
+        height: 30%;
+    }
 
     .content {
         margin: 200px 0 0;
