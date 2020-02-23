@@ -5,7 +5,6 @@
 }
 html, body {
     margin: 0;
-    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
     cursor: default;
 }
 
@@ -32,6 +31,7 @@ html, body {
 .side-bar .contact {
     padding: 10px;
     text-align: center;
+    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
 }
 .side-bar h1 {
     font-size: 1.5rem;
@@ -72,6 +72,7 @@ html, body {
     margin-left: 300px;
     padding: 50px;
     color: var(--black);
+    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
 }
 .content h1 {
     text-align: center;
@@ -151,7 +152,7 @@ html, body {
     }
     .side-bar .interests {
         order: 3;
-        width: 33%;
+        width: 33% !important;
     }
     .side-bar, .side-bar .contact h2 {
         font-size: 0.8rem;
