@@ -142,6 +142,9 @@ html, body {
         width: auto;
         order: 2;
     }
+    .side-bar h1 {
+        font-size: 1.3rem;
+    }
     .side-bar .contact {
         order: 1;
         width: 33%;
@@ -149,6 +152,9 @@ html, body {
     .side-bar .interests {
         order: 3;
         width: 33%;
+    }
+    .side-bar, .side-bar .contact h2 {
+        font-size: 0.9rem;
     }
 
     .content {
