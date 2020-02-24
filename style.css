@@ -152,6 +152,7 @@ html, body {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    z-index: 1;
 }
 .content a:after {    
     background: none repeat scroll 0 0 transparent;
