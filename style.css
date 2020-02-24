@@ -6,6 +6,13 @@
 html, body {
     margin: 0;
     cursor: default;
+    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
+}
+::-moz-selection{
+    background: var(--blue);
+}
+::selection {
+  background: var(--blue);
 }
 
 .side-bar {
@@ -36,7 +43,6 @@ html, body {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0;
-    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
 }
 .side-bar .interests {
     padding: 10px;
@@ -66,18 +72,40 @@ html, body {
     width: 1em;
     margin-left: -1em;
 }
+.side-bar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.side-bar a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.6px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.side-bar a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
 
 
 .content {
     margin-left: 300px;
     padding: 50px;
     color: var(--black);
-    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
 }
 .content h1 {
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
+    padding-top: 10px;
     margin: 0 50px;
     border-bottom: 5px solid var(--blue);
 }
@@ -107,28 +135,59 @@ html, body {
 .content .container .spans span {
     display: inline-block;
     padding: 5px 10px;
-    margin-bottom: 15px;
+    margin: 0 10px 15px;
     border-radius: 5px;
     background-color: #f3f3f3;
     transition: .5s;
 }
-.content .container .spans i {
-    display: inline-block;
-    margin: 5px 20px 15px;
-}
 .content .container .spans span:hover {
     background-color: gainsboro;
 }
+.content a {
+    color: var(--black);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.content a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.6px;
+    left: 50%;
+    position: absolute;
+    background: var(--black);
+    transition: width 0.4s ease 0s, left 0.4s ease 0s;
+    width: 0;
+}
+.content a:hover:after { 
+    width: 100%;
+    left: 0; 
+}
 
 
 
+
+.hover-effect {
+    background-image: linear-gradient(to right, transparent 50%, var(--black) 50%);
+    background-size: 200%;
+    transition: background-position .5s,
+                color 1s,
+                border-radius .5s;
+}
+.hover-effect:hover {
+    background-position: -100%;
+    color: var(--blue);
+    border-radius: 10px;
+}
 
 .text-centred {
     width: 100%;
     text-align: center !important;
 }
 .faded {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 @media all and (max-width: 900px) {
@@ -137,6 +196,7 @@ html, body {
         height: 250px;
         width: 100%;
         flex-direction: row;
+        font-family: "Times New Roman";
     }
     .side-bar img {
         height: 50%;
@@ -145,6 +205,7 @@ html, body {
     }
     .side-bar h1 {
         font-size: 1rem;
+        font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
     }
     .side-bar .contact {
         order: 1;
