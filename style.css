@@ -31,12 +31,12 @@ html, body {
 .side-bar .contact {
     padding: 10px;
     text-align: center;
-    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
 }
 .side-bar h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0;
+    font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
 }
 .side-bar .interests {
     padding: 10px;
@@ -134,7 +134,7 @@ html, body {
 @media all and (max-width: 900px) {
     .side-bar {
         top: 0;
-        height: 300px;
+        height: 250px;
         width: 100%;
         flex-direction: row;
     }
@@ -155,11 +155,11 @@ html, body {
         width: 33% !important;
     }
     .side-bar, .side-bar .contact h2 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .content {
-        margin: 300px 0 0;
+        margin: 250px 0 0;
     }
     .content h1 {
         font-size: 2.5rem;
@@ -170,7 +170,7 @@ html, body {
         height: 200px;
     }
     .side-bar img {
-        height: 30%;
+        height: 40%;
     }
 
     .content {
