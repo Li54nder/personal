@@ -29,12 +29,19 @@ html, body {
 }
 .side-bar img {
     position: relative;
-    margin: 10px;
+    margin: 30px 10px;
     width: 70%;
     height: auto;
     border-radius: 50%;
     padding: 6px;
     border: 5px solid var(--blue);
+}
+.side-bar .box {
+    height: inherit;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .side-bar .contact {
     padding: 10px;
@@ -42,6 +49,7 @@ html, body {
 }
 .side-bar h1 {
     font-size: 1.5rem;
+    text-align: center;
     text-transform: uppercase;
     margin: 0;
 }
@@ -195,33 +203,30 @@ html, body {
     opacity: 0.1;
 }
 
+
+
 @media all and (max-width: 900px) {
     .side-bar {
         top: 0;
         height: 250px;
         width: 100%;
         flex-direction: row;
-        font-family: "Times New Roman";
+        justify-content: space-around;
+        /* font-family: "Times New Roman"; */
     }
     .side-bar img {
-        height: 50%;
+        height: 70%;
         width: auto;
-        order: 2;
     }
     .side-bar h1 {
         font-size: 1rem;
-        font-family: Poppins, 'Trebuchet MS', Arial, sans-serif;
-    }
-    .side-bar .contact {
-        order: 1;
-        width: 33%;
-    }
-    .side-bar .interests {
-        order: 3;
-        width: 33% !important;
+        /* font-family: Poppins, 'Trebuchet MS', Arial, sans-serif; */
     }
     .side-bar, .side-bar .contact h2 {
         font-size: 0.6rem;
+    }
+    .side-bar a:after {    
+        height: 1px;
     }
 
     .content {
@@ -236,7 +241,7 @@ html, body {
         height: 200px;
     }
     .side-bar img {
-        height: 40%;
+        height: 60%;
     }
 
     .content {
