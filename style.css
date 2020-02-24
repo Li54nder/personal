@@ -48,6 +48,9 @@ html, body {
     padding: 10px;
     text-align: center;
 }
+.side-bar .interests li {
+    white-space: nowrap;
+}
 .side-bar .contact h2 {
     display: inline;
     font-size: 1rem;
