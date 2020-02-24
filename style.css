@@ -144,7 +144,7 @@ html, body {
         order: 2;
     }
     .side-bar h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .side-bar .contact {
         order: 1;
@@ -155,7 +155,7 @@ html, body {
         width: 33% !important;
     }
     .side-bar, .side-bar .contact h2 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .content {
@@ -168,9 +168,6 @@ html, body {
 @media all and (max-width: 650px) {
     .side-bar {
         height: 200px;
-    }
-    .side-bar, .side-bar .contact h2 {
-        font-size: 0.7rem;
     }
     .side-bar img {
         height: 30%;
