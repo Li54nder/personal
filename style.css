@@ -59,15 +59,18 @@ html, body {
 }
 .side-bar .interests li {
     white-space: nowrap;
+    padding-top: 5px;
+    font-size: 0.8rem;
 }
 .side-bar .contact h2 {
     display: inline;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--blue);
     margin: 0;
 }
 .side-bar .contact span {
     white-space: nowrap;
+    font-size: 0.8rem;
 }
 .side-bar ul {
     width: 100%;
@@ -200,7 +203,7 @@ html, body {
     text-align: center !important;
 }
 .faded {
-    opacity: 0.1;
+    opacity: 0.05;
 }
 
 
@@ -208,7 +211,7 @@ html, body {
 @media all and (max-width: 900px) {
     .side-bar {
         top: 0;
-        height: 250px;
+        height: 300px;
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
@@ -230,7 +233,7 @@ html, body {
     }
 
     .content {
-        margin: 250px 0 0;
+        margin: 300px 0 0;
     }
     .content h1 {
         font-size: 2rem;
@@ -238,13 +241,13 @@ html, body {
 }
 @media all and (max-width: 650px) {
     .side-bar {
-        height: 200px;
+        height: 250px;
     }
     .side-bar img {
         height: 60%;
     }
 
     .content {
-        margin: 200px 0 0;
+        margin: 250px 0 0;
     }
 }
