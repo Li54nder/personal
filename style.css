@@ -221,7 +221,7 @@ html, body {
         /* font-family: "Times New Roman"; */
     }
     .side-bar img {
-        height: 70%;
+        height: 65%;
         width: auto;
     }
     .side-bar h1 {
@@ -247,7 +247,7 @@ html, body {
         height: 250px;
     }
     .side-bar img {
-        height: 60%;
+        height: 50%;
     }
 
     .content {
