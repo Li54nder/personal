@@ -2,7 +2,7 @@
 
 :root {
     --black: #3C3A3D;
-    --red: #EF225C;
+    --red: #1069ca;
 }
 
 * {
@@ -57,13 +57,13 @@ body {
     cursor: pointer;
 }
 .navigation div:hover {
-    border-top: 5px solid #EF225C;
+    border-top: 5px solid var(--red);
 }
 .navigation div:hover p {
     margin-bottom: 5px;
 }
 .active_link {
-    border-top: 5px solid #EF225C;
+    border-top: 5px solid var(--red);
 }
 .active_link p {
     margin-bottom: 5px;
@@ -97,8 +97,8 @@ body {
 .about .image img {
     height: 200px;
     border-radius: 50%;
-    padding: 10px;
-    border: 5px solid var(--black);
+    /* padding: 10px;
+    border: 5px solid var(--black); */
     margin-right: 40px;
 }
 .about .info .name h1 {
